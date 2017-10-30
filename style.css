@@ -1,0 +1,57 @@
+body {
+  background: #000000;
+  color: #ffffff;
+  text-align: center;
+
+}
+
+.transitionarea {
+  background: linear-gradient(132deg, #000, #fff);
+  height: 10px;
+  width: 100%;
+  background-size: 400% 400%;
+  animation: BackgroundGradient 10s ease infinite;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+  @keyframes BackgroundGradient {
+    0% {background-position: 0% 50%;}
+    50% {background-position: 100% 50%;}
+    100% {background-position: 0% 50%;}
+  }
+
+  .transitionarea2 {
+    background: linear-gradient(132deg, #fff, #000);
+    height: 10px;
+    width: 100%;
+    background-size: 400% 400%;
+    animation: BackgroundGradient 10s ease infinite;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+
+    @keyframes BackgroundGradient {
+      0% {background-position: 0% 50%;}
+      50% {background-position: 100% 50%;}
+      100% {background-position: 0% 50%;}
+  }
+
+.branding svg {
+  height: 50%;
+  width: 50%;
+  margin: 60px 0 0 0;
+  padding: none;
+}
+
+.branding a {
+  text-decoration: none;
+  color: #fff;
+  font-family: 'Montserrat:200', 'Montserrat', sans-serif;
+  margin: none;
+  padding: 20px 0;
+}
